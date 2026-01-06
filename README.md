@@ -1,2 +1,1 @@
-# secret_number
-My first ever Rust project. 
+This repository contains my first ever Rust project. It is a basic terminal game, which some sort of twist. But in general, it is very basic, you have 7 attempts to guess the wizard's **secret number**!
