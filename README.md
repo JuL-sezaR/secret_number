@@ -4,18 +4,19 @@ This repository contains my **first-ever Rust project**
 It is a simple **terminal-based guessing game** with a small twist.
 
 You are facing a wizard who has chosen a **secret number**.  
-You have **7 attempts** to guess it correctly before the game ends.
+You can choose between 4 different difficulty levels, 1 being the easiest and 4 being the hardest(simply impossible). Worth trying it out tho!
+The wizard talks quite dark sometimes. I mean generally he does it a lot. Don't take him that serious.
 
 ---
 
 ## How the Game Works
 
-- The wizard chooses a random number between **1 and 1000**
-- You have **7 attempts**
+- The wizard chooses a random number between **1 and x**
+- You have **x attempts**
 - After each guess, the game tells you:
   - Whether your guess is **too high** or **too low**
   - A **hint** about how close you are
-- Guess the number in time to win 🧙‍♂️
+- Guess the number in time to win and deffeat the wizard!🧙‍♂️
 
 ---
 
