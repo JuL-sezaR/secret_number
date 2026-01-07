@@ -127,8 +127,7 @@ fn read_guess() -> u32 {
 
         io::stdin()
             .read_line(&mut guess)
-            .expect("I don't understand, which part about this simple game you cannot understand, you garbage... \n
-                Guess a number between 1 and {}!", config.max_number);
+            .expect("I don't understand, which part about this simple game you cannot understand, you garbage...");
 
         match guess.trim().parse() {
             Ok(num) => return num,
