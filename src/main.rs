@@ -156,3 +156,31 @@ fn read_guess() -> u32 {
         }
     }
 }
+
+// New addition: Items for a better game experience
+enum Items {
+    Sword,
+    Shield,
+    Potion
+}
+
+fn pick_item() -> Items {
+    loop {
+        wizard_speak("Choose an item for the fight to be a little fair for a loser like you!");
+        wizard_speak("1. Sword  (+1 extra attempt)");
+        wizard_speak("2. Shield (One mistake forgiven)");
+        wizard_speak("3. Potion (One strong hint)");
+
+        let mut choice = String::new();
+        io::stdin()
+            .read_line(&mut choice)
+            .expect("Come on, choose an item for god's sake now!");
+
+        match choice.trim() {
+            "1" => return Items::Sword,
+            "2" => return Items::Shield,
+            "3" => return Items::Potion,
+            _ => println!("Someone told me that moron's can't even follow simple instructions"),
+        }
+
+}
